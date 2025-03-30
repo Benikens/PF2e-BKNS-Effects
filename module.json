@@ -1,0 +1,65 @@
+{
+    "id": "pf2e-bkns-effects",
+    "title": "PF2e BKNS Effect Macros",
+    "description": "Utilities for applying effects and buffs using socketlib, built for PF2e macros.",
+    "version": "1.0.0",
+    "authors": [
+      {
+        "name": "Benjamin Russell",
+        "email": "ben@chkpt.com.au"
+      }
+    ],
+    "compatibility": {
+      "minimum": "12",
+      "verified": "12",
+      "maximum": "12"
+    },
+    "system": "pf2e",
+    "esmodules": ["main.js"],
+    "templates": [
+      "macro-builder.html"
+    ],
+    "socket": true,
+    "manifest": "modules/pf2e-bkns-effects/module.json",
+    "license": "MIT",
+    "relationships": {
+      "systems": [
+        {
+            "id": "pf2e",
+            "type": "system",
+            "compatibility": {
+                "minimum": "6.8.1",
+                "verified": "6.10.2"
+            }
+        }
+    ],
+      "requires": [
+        {
+          "id": "socketlib",
+          "type": "module",
+          "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json"
+        }
+      ]
+    },
+    "packs": [
+      {
+          "name": "bkns-effect-macros",
+          "label": "BKNS Effect Macros",
+          "system": "pf2e",
+          "path": "packs/bkns-effect-macros",
+          "type": "Macro",
+          "private": false,
+          "flags": {}
+      }
+  ],
+  "packFolders": [
+      {
+          "name": "PF2e EBKNS Effect Macros",
+          "sorting": "m",
+          "packs": [
+              "bkns-effect-macross"
+          ]
+      }
+  ]
+  }
+  

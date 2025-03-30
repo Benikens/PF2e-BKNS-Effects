@@ -1,0 +1,34 @@
+<form class="flexcol">
+    <div class="form-group">
+      <label>Target</label>
+      <select id="target-select">
+        <option value="self" selected>Self</option>
+        <option value="target">Target</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label>Primary Effect UUID</label>
+      <input type="text" id="primary-effect-uuid" placeholder="Compendium.pf2e.spell-effects.Item.xxxxxx"/>
+    </div>
+  
+    <div class="form-group">
+      <label>Secondary Effect UUID (optional)</label>
+      <input type="text" id="secondary-effect-uuid" />
+    </div>
+  
+    <div class="form-group">
+      <button type="button" id="generate-macro">Generate Macro</button>
+    </div>
+  
+    <div class="form-group">
+      <label>Generated Macro</label>
+    </div>
+    <div class="form-group">
+      <textarea id="macro-output" rows="6" readonly></textarea>
+    </div>
+    <div class="form-group">
+      <button type="button" id="copy-macro">Copy</button>
+    </div>
+  </form>
+  
